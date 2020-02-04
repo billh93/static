@@ -5,7 +5,7 @@ pipeline {
           steps {
             Use Jenkins UsernamePassword credentials information (Username: AccessKeyId, Password: SecretAccessKey): 
             withAWS(credentials:'nameOfSystemCredentials') {
-                s3Upload(file:'index.html', bucket:'jenkins-udacity-s3', path:'index.html')
+                s3Upload(file:'index.html', bucket:'jenkins-udacity-s3', path:'')
             }
           }
         }
